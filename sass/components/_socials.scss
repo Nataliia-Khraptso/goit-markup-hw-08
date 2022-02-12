@@ -1,0 +1,33 @@
+.socials {
+  display: flex;
+  justify-content: center;
+}
+
+.socials__icon-link {
+  @include centered-flex(inline-flex);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: $color-primary-white;
+  cursor: pointer;
+  color: #afb1b8;
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $color-accent;
+    color: $color-primary-white;
+  }
+  @include transition(background-color);
+  @include transition(color);
+}
+
+.socials__icon {
+  fill: currentColor;
+}

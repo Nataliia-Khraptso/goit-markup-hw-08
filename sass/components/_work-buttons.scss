@@ -1,0 +1,53 @@
+.works {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  background-color: $color-primary-white;
+}
+
+.works__gallery-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 56px;
+}
+
+.works__gallery-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.works__button {
+  display: block;
+  margin: 0;
+  padding: 6px 22px;
+  border-radius: 4px;
+  border: none;
+
+  color: $color-secondary-text;
+
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  border: none;
+
+  &:hover,
+  &:focus {
+    color: $color-primary-white;
+    background-color: $color-accent;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+  @include transition(color);
+  @include transition(background-color);
+  @include transition(box-shadow);
+}
+
+/* .works-button:last-child {
+  margin-right: 0;
+} */
+
+/* /* .works-button + .works-button {
+  margin-left: 8px;
+(не розумію чому ці формули не працюють) */

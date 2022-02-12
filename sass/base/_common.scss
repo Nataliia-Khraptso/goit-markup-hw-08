@@ -1,0 +1,20 @@
+body {
+  background-color: $color-primary-white;
+  color: $color-primary-text;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+}
+
+.container {
+  width: 1230px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 0 auto;
+}
+
+.btn {
+  @include font($fs: 16px, $fw: 700, $lh: 1.87, $ls: 0.06em);
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+}

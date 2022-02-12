@@ -1,0 +1,160 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #2f303a;
+}
+
+.footer__logo-icon {
+  display: block;
+  margin-bottom: 20px;
+}
+.footer__logo {
+  color: $color-primary-white;
+}
+
+.footer-contacts__link {
+  display: block;
+
+  color: rgba(255, 255, 255, 0.6);
+  @include font();
+  font-style: normal;
+  @include transition(color);
+  &:hover,
+  &:focus {
+    color: $color-accent;
+  }
+}
+
+.footer-contacts__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+/* .footer-contacts .link:last-child {
+  margin-bottom: 0;
+} */
+
+/* /* .footer-contacts .link:last-child {
+  margin-bottom: 0;
+/* } */
+/* (не розумію чому ці формули не працюють) */
+
+.footer-contacts__address {
+  color: $color-primary-white;
+
+  @include font();
+  @include transition(color);
+}
+
+.join {
+  font-family: Roboto;
+  @include font($fw: 700, $lh: 1.14);
+
+  text-transform: uppercase;
+
+  color: $color-primary-white;
+}
+
+.footer__join {
+  margin-bottom: 20px;
+}
+
+.footer__wrap {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.footer__join-wrap {
+  display: flex;
+  flex-direction: column;
+  margin-left: 70px;
+}
+
+.footer-socials {
+  @include centered-flex();
+}
+
+.footer-socials__link {
+  @include centered-flex();
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+  &:last-child {
+    margin-right: 0;
+  }
+  &:hover,
+  &:focus {
+    background-color: $color-accent;
+  }
+  @include transition(background-color);
+}
+
+.footer-socials__icon {
+  width: 20px;
+  height: 20px;
+}
+
+.subscribe {
+  @include font($fw: 700, $lh: 1.14);
+
+  text-transform: uppercase;
+  margin-left: 93px;
+  margin-bottom: 20px;
+
+  color: $color-primary-white;
+}
+
+.subscribe__input {
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  margin-left: 93px;
+  padding-left: 16px;
+  background-color: transparent;
+  color: $color-primary-white;
+  @include transition(border-color);
+  outline: none;
+  &::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+
+    color: rgba(255, 255, 255, 0.6);
+  }
+  &:focus {
+    border-color: $color-accent;
+  }
+}
+
+.subscribe__button {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 29px;
+  border-radius: 4px;
+  margin-left: 12px;
+
+  background-color: $color-accent;
+  color: $color-primary-white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+  }
+  @include transition(background-color);
+}
+
+.subscribe__input-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.subscribe__icon {
+  margin-left: 10px;
+}
