@@ -1,15 +1,25 @@
 .works__card-set {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-left: -30px;
-  margin-top: -30px;
+  // display: flex;
+  // flex-wrap: wrap;
+  // justify-content: center;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+  }
+  margin-bottom: -30px;
 }
 
 .card-set__item {
-  flex-basis: calc(100% / 3 - 30px);
-  margin-left: 30px;
-  margin-top: 30px;
+  @media screen and (min-width: 768px) {
+    width: calc(100% / 2 - 30px);
+    margin-left: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc(100% / 3 - 30px);
+  }
+
+  margin-bottom: 30px;
   border: 1px solid #eeeeee;
   cursor: pointer;
 
