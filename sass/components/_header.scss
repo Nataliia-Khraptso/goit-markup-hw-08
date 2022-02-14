@@ -19,6 +19,23 @@
 .header__container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.menu-open-btn {
+  background-color: #ffffff;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
+}
+
+.site-nav-wrap,
+.header-contacts-wrap {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
 }
 
 .main-nav {
