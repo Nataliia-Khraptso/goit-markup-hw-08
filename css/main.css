@@ -498,7 +498,7 @@ body {
   margin-bottom: 10px;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .features__title {
     text-align: start;
   }
@@ -794,10 +794,6 @@ body {
 
 .footer__logo {
   color: #ffffff;
-}
-
-.footer-contacts {
-  margin-bottom: 60px;
 }
 
 .footer-contacts__link {
