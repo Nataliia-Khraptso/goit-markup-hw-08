@@ -219,6 +219,12 @@ body {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .header__site-contacts {
+    align-items: baseline;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .site-contacts__item-phone {
     margin-top: 10px;
@@ -1408,6 +1414,16 @@ body {
   padding-top: 48px;
   padding-bottom: 48px;
   overflow-y: scroll;
+}
+
+@media screen and (min-width: 767px) {
+  .mob-menu {
+    display: none;
+  }
+}
+
+.mob-menu.is-hidden {
+  transform: translateY(-100%);
 }
 
 .mob-menu-container {

@@ -1,4 +1,7 @@
 .mob-menu {
+  @media screen and (min-width: 767px) {
+    display: none;
+  }
   position: fixed;
   z-index: 999;
   background-color: $color-primary-white;
@@ -9,6 +12,10 @@
   padding-top: 48px;
   padding-bottom: 48px;
   overflow-y: scroll;
+
+  &.is-hidden {
+    transform: translateY(-100%);
+  }
 }
 
 .mob-menu-container {
