@@ -26,14 +26,14 @@
   background-color: #ffffff;
   padding-top: 22px;
   padding-bottom: 22px;
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     display: none;
   }
 }
 
 .site-nav-wrap,
 .header-contacts-wrap {
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 767px) {
     display: none;
   }
 }
@@ -41,6 +41,7 @@
 .main-nav {
   display: flex;
   align-items: center;
+  margin-right: auto;
 }
 
 /* site-nav */
@@ -105,14 +106,29 @@
 .header__site-contacts {
   @include centered-flex();
   margin-left: auto;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: block;
+  }
 }
 
 .site-contacts__item-phone {
-  margin-left: 50px;
+  @media screen and (min-width: 768px) {
+    margin-top: 10px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 0;
+    margin-left: 50px;
+  }
 }
 
 .site-contacts__link {
   color: $color-primary-text;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    font-size: 12px;
+    line-height: 1.16;
+  }
 
   font-weight: 500;
   font-size: 14px;
@@ -134,6 +150,11 @@
   height: 12px;
   margin-right: 10px;
   fill: $color-primary-text;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 14px;
+    height: 10px;
+  }
 }
 
 .site-contacts__telephone-icon {
@@ -141,6 +162,10 @@
   height: 16px;
   margin-right: 10px;
   fill: $color-primary-text;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 10px;
+    height: 14px;
+  }
 }
 
 /* 
